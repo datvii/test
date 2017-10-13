@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Register</title>
+	<meta name="description" content="">
+	<meta name="robots" content="noindex"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body class="ishome">
+	<div class="container">
+		<div class="reg_form_wrap">
+			<h2>Регистрация</h2>
+			<form action="#" class="reg_form">
+				<label>
+					<input name="name" type="text" placeholder="Имя">
+				</label>
+				<label>
+					<input name="secondname" type="text" placeholder="Фамилия">
+				</label>
+				<label>
+					<input name="email" type="text" placeholder="Email">
+				</label>
+				<label>
+					<select name="gender">
+						<option value="male">male</option>
+						<option value="female">female</option>
+					</select>
+				</label>
+				<label>
+					<input type="password" name="pass" placeholder="Пароль">
+				</label>
+				<label for="agree">
+					<input type="checkbox" name="agree" value="agree" id="agree">
+					<span>С условиями ознакомлен</span>
+				</label>
+				<label>
+					<input type="button" class="btn_reg" value="Зарегистрироваться">
+				</label>
+			</form>
+		</div>
+	</div>
+	
+
+	<!--[if lte IE 8]>
+		<style type='text/css'>
+		<link href="css/ie.css" rel="stylesheet" type="text/css"/>
+		<script src="bower_components/html5shiv/es5-shim.min.js"></script>
+		<script src="bower_components/html5shiv/html5shiv.min.js"></script>
+		<script src="bower_components/html5shiv/html5shiv-printshiv.min.js"></script>
+		<script src="bower_components/respond/respond.min.js"></script>
+	</style>
+	<!-->
+	<!--[if lt IE 9]>
+		<script src="bower_components/html5shiv/es5-shim.min.js"></script>
+		<script src="bower_components/html5shiv/html5shiv.min.js"></script>
+		<script src="bower_components/html5shiv/html5shiv-printshiv.min.js"></script>
+		<script src="bower_components/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="app/bower_components/bootstrap/bootstrap-grid-3.3.1.min.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="app/css/main.min.css">
+	<link rel="stylesheet" href="app/bower_components/sweetalert2/dist/sweetalert2.css">
+
+	<script src="app/js/libs.min.js"></script>
+	<script src="app/js/main.js"></script>
+	<script src="app/bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+</body>
+</html>

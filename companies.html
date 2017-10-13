@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Companies</title>
+	<meta name="description" content="">
+	<meta name="robots" content="noindex">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body class="ishome">
+
+	<div class="container">
+		<div class="companies_info">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="total_companies">
+						<h2>Total Companies</h2>
+						<p class="count_partner_wrap">
+							<span class="count_partner">
+								<!-- json -->
+							</span>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="list_of_companies">
+						<h2>List of Companies</h2>
+						<!-- json -->
+					</div>
+					<div class="company_partners_wrap">
+						<h2>Company partners</h2>
+						<div class="sort">
+							<strong>Sort by:</strong>
+							<p class="btn_sort sort_name">Name</p>
+							<p class="btn_sort percentage">Percentage</p>
+						</div>
+						<div class="company_partners">
+							<!-- json -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="company_by_location">
+						<p class="back_arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i></p>
+						<h2>Companies by Location</h2>
+						<div id="companies_chart">
+							<!-- chart of companies -->
+						</div>
+						<div class="companies_in_countries">
+							<!-- json -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="news">
+						<h2>News</h2>
+							<div class="news_slider">
+								<!-- json -->
+							</div>
+						<div class="preloader"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--[if lte IE 8]>
+		<style type='text/css'>
+		<link href="css/ie.css" rel="stylesheet" type="text/css"/>
+		<script src="bower_components/html5shiv/es5-shim.min.js"></script>
+		<script src="bower_components/html5shiv/html5shiv.min.js"></script>
+		<script src="bower_components/html5shiv/html5shiv-printshiv.min.js"></script>
+		<script src="bower_components/respond/respond.min.js"></script>
+	</style>
+	<!-->
+	<!--[if lt IE 9]>
+		<script src="bower_components/html5shiv/es5-shim.min.js"></script>
+		<script src="bower_components/html5shiv/html5shiv.min.js"></script>
+		<script src="bower_components/html5shiv/html5shiv-printshiv.min.js"></script>
+		<script src="bower_components/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="app/bower_components/bootstrap/bootstrap-grid-3.3.1.min.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="app/css/main.min.css">
+	<link rel="stylesheet" href="app/bower_components/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="app/bower_components/slick-carousel/slick/slick-theme.css">
+
+	<script src="app/js/libs.min.js"></script>
+	<script src="app/js/main.js"></script>
+	<script src="app/bower_components/slick-carousel/slick/slick.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+	<script>
+		$(function() {
+			general.companies();
+			general.news();
+		});
+
+	</script>
+
+</body>
+</html>
